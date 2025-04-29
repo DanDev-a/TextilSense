@@ -8,3 +8,11 @@ yolo task=segment mode=train epochs=60 data=dataset.yaml model=yolov8x-seg.pt im
 
 val es recomendable que tenga imagenes diferentes a train
 ejemplo: train 1000 imagenes - val 200 imagenes
+
+*usar Python 3.10.11
+
+*se recomienda usar un entorno virtual
+
+python -m venv env
+exportar\Scripts\activate
+pip install -r requirements.txt

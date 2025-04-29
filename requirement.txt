@@ -1,0 +1,17 @@
+# YOLOv8 y exportación a ONNX
+ultralytics==8.3.120
+torch==2.0.1
+numpy
+opencv-python
+onnx>=1.12.0
+
+# Para conversión de ONNX a TFLite sin ai_edge_litert
+tensorflow==2.13.0
+onnx2tf==1.25.1
+
+# (Opcional) Para visualizar o validar modelos ONNX
+onnxruntime
+
+#para probar el modelo tensorflow-Lite con una imagen
+pip install tflite-runtime 
+pip install pillow numpy

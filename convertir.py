@@ -1,13 +1,7 @@
 from ultralytics import YOLO
 
-model = YOLO('runs/detect/train/weights/best.pt')
-# Convertir el modelo a TFLite
+# Cargar el modelo entrenado
+model = YOLO('runs/detect/train/weights/best.pt')  # Asegúrate de que la ruta sea correcta
 
-model.eval()
-model.model.stride = 32
-
-model.model.input_size = (320, 320)
-
-model.export(format='tflite')
-
-print("Modelo convertido a TFLite con éxito.")
+# Exportar a TensorFlow Lite
+model.export(format='tflite', imgsz=320)  # Puedes ajustar imgsz si lo necesitas
