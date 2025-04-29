@@ -1,0 +1,6 @@
+train: C:\Users\Personal\Desktop\Git-Hub\Repositorio-Propios\TextilSense\dataset\train\
+val: C:\Users\Personal\Desktop\Git-Hub\Repositorio-Propios\TextilSense\dataset\val\
+test:
+
+names:
+    0: Polera
